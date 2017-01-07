@@ -34,7 +34,7 @@
 <div class="navbar navbar-default" role="navigation">
 
     <div class="navbar-inner">
-        <a class="navbar-brand" href="/index.php/admin"><span>后台管理</span></a>
+        <a class="navbar-brand" href="/admin"><span>后台管理</span></a>
 
         <!-- user dropdown starts -->
         <div class="btn-group pull-right">
@@ -43,7 +43,7 @@
                 <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-                <li><a href="/index.php/login/logout">Logout</a></li>
+                <li><a href="/login/logout">Logout</a></li>
             </ul>
         </div>
         <!-- user dropdown ends -->
@@ -72,28 +72,28 @@
                         <li class="nav-header">Main</li>
                         <li <?php if ($menu == 'index') echo 'class="active"' ?>
 
-                        ><a href="/index.php/admin"><i
+                        ><a href="/admin"><i
                                         class="glyphicon glyphicon-home"></i><span> 控制面板</span></a></li>
                         <li <?php if ($menu == 'category') echo 'class="active"' ?>>
-                            <a href="/index.php/admin/category"><i class="glyphicon glyphicon-align-justify"></i><span> 栏目</span></a>
+                            <a href="/admin/category"><i class="glyphicon glyphicon-align-justify"></i><span> 栏目</span></a>
                         </li>
                         <li <?php if ($menu == 'article') echo 'class="active"' ?>>
-                            <a href="/index.php/admin/article"><i class="glyphicon glyphicon-font"></i><span> 文章</span></a>
+                            <a href="/admin/article"><i class="glyphicon glyphicon-font"></i><span> 文章</span></a>
                         </li>
                         <li <?php if ($menu == 'navigation') echo 'class="active"' ?>>
-                            <a href="/index.php/admin/navigation">
+                            <a href="/admin/navigation">
                                 <i class="glyphicon glyphicon-globe"></i><span> 导航栏</span>
                             </a>
                         </li>
                         <li <?php if ($menu == 'page') echo 'class="active"' ?>>
-                            <a href="/index.php/admin/page">
+                            <a href="/admin/page">
                                 <i class="glyphicon glyphicon-globe"></i><span> 页面</span>
                             </a>
                         </li>
                         <li <?php if ($menu == 'image') echo 'class="active"' ?>>
-                            <a href="/index.php/admin/image"><i
+                            <a href="/admin/image"><i
                                         class="glyphicon glyphicon-list-alt"></i><span> 图集</span></a></li>
-                        <li <?php if ($menu == 'message') echo 'class="active"' ?>><a href="/index.php/admin/message"><i class="glyphicon glyphicon-edit"></i><span> 留言板</span></a></li>
+                        <li <?php if ($menu == 'message') echo 'class="active"' ?>><a href="/admin/message"><i class="glyphicon glyphicon-edit"></i><span> 留言板</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -104,12 +104,12 @@
             <!-- content starts -->
             <div>
                 <ul class="breadcrumb">
-                    <li><a href="/index.php/admin">首页</a></li>
+                    <li><a href="/admin">首页</a></li>
                     <?php
                     $crumbs = $this->config->item('crumbs');
                     while (isset($crumbs)) {
                         if (isset($crumbs['url'])) {
-                            echo '<li><a href="/index.php' . $crumbs['url'] . '">' . $crumbs['name'] . '</a></li>';
+                            echo '<li><a href="' . $crumbs['url'] . '">' . $crumbs['name'] . '</a></li>';
                         } else {
                             echo '<li>' . $crumbs['name'] . '</li>';
                         }

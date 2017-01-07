@@ -1,5 +1,5 @@
 <div>
-    <a class="btn btn-success" href="/index.php/admin/article/add"> 新增文章</a>
+    <a class="btn btn-success" href="/admin/article/add"> 新增文章</a>
 </div>
 
 <div class="row">
@@ -29,15 +29,15 @@
                                 <td class="center"><?php echo date("Y-m-d H:i:s", strtotime($article->update_time)); ?></td>
                                 <td class="center">
                                     <a class="btn btn-success"
-                                       href="/index.php/admin/article/detail?id=<?= $article->id ?>">
+                                       href="/admin/article/detail?id=<?= $article->id ?>">
                                         <i class="glyphicon glyphicon-zoom-in icon-white"></i> View
                                     </a>
                                     <a class="btn btn-info"
-                                       href="/index.php/admin/article/edit?id=<?= $article->id ?>">
+                                       href="/admin/article/edit?id=<?= $article->id ?>">
                                         <i class="glyphicon glyphicon-edit icon-white"></i> Edit
                                     </a>
                                     <a class="btn btn-danger" title="文章删除后将被放入回收站中" data-toggle="tooltip"
-                                       href="/index.php/admin/article/disable?id=<?= $article->id ?>">
+                                       href="/admin/article/disable?id=<?= $article->id ?>">
                                         <i class="glyphicon glyphicon-trash icon-white"></i> Delete
                                     </a>
                                 </td>

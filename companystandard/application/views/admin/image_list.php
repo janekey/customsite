@@ -1,5 +1,5 @@
 <div>
-    <a class="btn btn-success" href="/index.php/admin/image/add"> 新增图片</a>
+    <a class="btn btn-success" href="/admin/image/add"> 新增图片</a>
 </div>
 <div class="row">
     <div class="box col-md-12">

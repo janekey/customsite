@@ -5,7 +5,7 @@
                 <h2><i class="glyphicon glyphicon-edit"></i> 新增导航</h2>
             </div>
             <div class="box-content">
-                <form role="form" action="/index.php/admin/navigation/add" method="post">
+                <form role="form" action="/admin/navigation/add" method="post">
                     <div class="form-group">
                         <label for="naviName">导航名称</label>
                         <input type="text" class="form-control" id="naviName" name="naviName"

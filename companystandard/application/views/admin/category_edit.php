@@ -8,7 +8,7 @@
                 <?php if (isset($error)) : ?>
                     <code><?= $error ?></code>
                 <?php else : ?>
-                    <form role="form" action="/index.php/admin/category/edit" method="post">
+                    <form role="form" action="/admin/category/edit" method="post">
                         <div class="form-group">
                             <input type="hidden" name="id" value="<?= $category->id ?>"/>
                             <label for="categoryName">栏目名称</label>

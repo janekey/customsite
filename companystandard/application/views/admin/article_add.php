@@ -5,7 +5,7 @@
                 <h2><i class="glyphicon glyphicon-edit"></i> 新增文章</h2>
             </div>
             <div class="box-content">
-                <form role="form" action="/index.php/admin/article/add" method="post">
+                <form role="form" action="/admin/article/add" method="post">
                     <div class="form-group">
                         <label for="title">文章标题</label>
                         <input type="text" class="form-control" id="title" name="title"

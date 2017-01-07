@@ -8,7 +8,7 @@
                 <?php if (isset($error)) : ?>
                     <code><?= $error ?></code>
                 <?php else : ?>
-                    <form role="form" action="/index.php/admin/article/edit" method="post">
+                    <form role="form" action="/admin/article/edit" method="post">
                         <input type="hidden" name="id" value="<?= $article->id ?>"/>
                         <div class="form-group">
                             <label for="title">文章标题</label>

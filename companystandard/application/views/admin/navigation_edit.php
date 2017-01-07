@@ -8,7 +8,7 @@
                 <?php if (isset($error)) : ?>
                     <code><?= $error ?></code>
                 <?php else : ?>
-                    <form role="form" action="/index.php/admin/navigation/edit" method="post">
+                    <form role="form" action="/admin/navigation/edit" method="post">
                         <input type="hidden" name="id" value="<?= $navigation->id ?>"/>
                         <div class="form-group">
                             <label for="naviName">导航名称</label>

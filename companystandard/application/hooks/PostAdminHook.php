@@ -13,8 +13,8 @@ class PostAdminHook
 
     function post_controller()
     {
-        $url = $_SERVER['PHP_SELF'];
-        if (stripos($url, "index.php/admin")) {
+        $isAdmin = $this->CI->uri->segment(1);
+        if (isset($isAdmin) && $isAdmin == 'admin') {
             $admin = $this->CI->session->userdata('admin');
             if ($admin) {
                 $this->CI->load->view('common/admin_foot');

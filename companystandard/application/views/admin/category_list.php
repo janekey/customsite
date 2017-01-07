@@ -1,5 +1,5 @@
 <div>
-    <a class="btn btn-success" href="/index.php/admin/category/add"> 新增栏目</a>
+    <a class="btn btn-success" href="/admin/category/add"> 新增栏目</a>
 </div>
 
 <div class="row">
@@ -26,10 +26,10 @@
                                 <td class="center"><?= $category->category_name ?></td>
                                 <td class="center"><?php echo date("Y-m-d H:i:s", strtotime($category->update_time)); ?></td>
                                 <td class="center">
-                                    <a class="btn btn-info" href="/index.php/admin/category/edit?id=<?= $category->id ?>">
+                                    <a class="btn btn-info" href="/admin/category/edit?id=<?= $category->id ?>">
                                         <i class="glyphicon glyphicon-edit icon-white"></i> Edit
                                     </a>
-                                    <a class="btn btn-danger" href="/index.php/admin/category/delete?id=<?= $category->id ?>">
+                                    <a class="btn btn-danger" href="/admin/category/delete?id=<?= $category->id ?>">
                                         <i class="glyphicon glyphicon-trash icon-white"></i> Delete
                                     </a>
                                 </td>

@@ -1,5 +1,5 @@
 <div>
-    <a class="btn btn-success" href="/index.php/admin/navigation/add"> 新增导航</a>
+    <a class="btn btn-success" href="/admin/navigation/add"> 新增导航</a>
 </div>
 
 <div class="row">
@@ -31,11 +31,11 @@
                                 <td class="center"><?php echo date("Y-m-d H:i:s", strtotime($navigation->update_time)); ?></td>
                                 <td class="center">
                                     <a class="btn btn-info"
-                                       href="/index.php/admin/navigation/edit?id=<?= $navigation->id ?>">
+                                       href="/admin/navigation/edit?id=<?= $navigation->id ?>">
                                         <i class="glyphicon glyphicon-edit icon-white"></i> Edit
                                     </a>
                                     <a class="btn btn-danger"
-                                       href="/index.php/admin/navigation/delete?id=<?= $navigation->id ?>">
+                                       href="/admin/navigation/delete?id=<?= $navigation->id ?>">
                                         <i class="glyphicon glyphicon-trash icon-white"></i> Delete
                                     </a>
                                 </td>
