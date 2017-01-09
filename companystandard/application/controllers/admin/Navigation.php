@@ -8,7 +8,7 @@ class Navigation extends CI_Controller
 {
     function index()
     {
-        $result = $this->NavigationModel->getListPage();
+        $result = $this->NavigationModel->getList();
         $this->load->view('admin/navigation_list', $result);
     }
 

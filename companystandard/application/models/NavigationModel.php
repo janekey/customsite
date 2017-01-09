@@ -6,6 +6,15 @@
  */
 class NavigationModel extends CI_Model
 {
+    function getList() {
+        $this->db->order_by("update_time", "desc");
+        $query = $this->db->get('navigation');
+        $data = $query->result();
+        return array(
+            'data' => $data,
+        );
+    }
+
     function getListPage($pageNo = 1, $pageSize = 10)
     {
         $offset = ($pageNo - 1) * $pageSize;
